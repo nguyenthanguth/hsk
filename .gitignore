@@ -1,24 +1,72 @@
-# Nestjs specific
-/dist
-/node_modules
-/build
-/tmp
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs & Production
+dist/
+dist-ssr/
+build/
+.vite/
+.cache/
+
+# Runtime SQLite Databases & Journal / WAL Files
+server/data/*.sqlite
+server/data/*.sqlite-*
+server/data/*.sqlite-journal
+server/data/*.sqlite-wal
+server/data/*.sqlite-shm
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Environment Variables & Local Configs
+.env
+.env.*
+!.env.example
+*.local
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
-# dotenv environment variable files
-.env
-.env.development
-.env.test
-.env.production
+# Test & Coverage Outputs
+coverage/
+*.lcov
+.nyc_output/
 
-# temp directory
-.temp
-.tmp
+# Editor & IDE Directories
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary Files
+.temp/
+.tmp/
+tmp/
